@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Lucas Convert Money</title>
+</head>
+
+<body>
+    <div class="package">
+        <div class="reader">
+            <h1>Lucas Convert Money</h1>
+        </div>
+        <main>
+            <label>
+                Converter <b>de</b>
+                <select>
+                    <option>
+                        R$ <b>Real brasileiro</b>
+                    </option>
+                </select>
+            </label>
+            <label>
+                Converter <b>para</b>
+                <select id="select">
+                    <option value="dolar">
+                        US$ <b>Dólar americano</b>
+                    </option>
+                    <option value="euro" >
+                        € <b>Euro</b>
+                    </option>
+                    <option value="bitcoin" >
+                        ฿ <b>Bitcoin</b>
+                    </option>
+                </select>
+            </label>
+            <label>
+                Valor
+                <input id="input" type="number" placeholder="R$10.000,00">
+            </label>
+            <button id="botao">Converter</button>
+            <section>
+                <div class="icone">
+                    <img src= "./assets/Brasil.png" alt="icone Brasil">
+                    <p class="currencyname">Real</p>
+                    <p id="br" class="value">R$ 10.000,00</p>
+                </div>
+                <img class="seta" src="./assets/seta.png" alt="seta">
+                <div class="icone">
+                    <img id="img" src="./assets/estados-unidos (1) 1.png" alt="icone estados-unidos">
+                    <p id="texto" class="currencyname">Dolar americano</p>
+                    <p id="eua" class="value">US$ 2.000,00</p>
+
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="./scripts.js"> 
+</script>
+</html>
